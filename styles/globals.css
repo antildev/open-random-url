@@ -55,7 +55,8 @@ a, i {
   user-select: all;
 }
 
-.url-actions {
+.url-actions,
+.process-urls {
   text-align: center;
 }
 
@@ -84,10 +85,6 @@ a, i {
   justify-content: space-between;
 }
 
-.list-item:hover {
-  background-color: var(--accent);
-}
-
 .list-item * {
   vertical-align: middle;
 }
@@ -106,6 +103,6 @@ a, i {
 }
 
 .list-item i:hover {
-  color: var(--destructive);
+  background-color: var(--destructive);
   cursor: pointer;
 }

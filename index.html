@@ -10,13 +10,13 @@
   <script src="scripts/functions.js"></script>
 </head>
 <body>
+
   <main>
     <div id="editable-div" class="editable-div" contenteditable="true">Paste here your URLs.</div>
     <div id="url-actions" class="url-actions">
+      <input type="button" id="paste-urls" class="btn" value="Paste from clipboard">
       <input type="button" id="add-urls" class="btn" value="Add URLs">
       <input type="button" id="clear-urls" class="btn" value="Clear URLs">
-      <input type="button" class="btn" value="Save URLs">
-      <input type="button" class="btn" value="Save to database">
     </div>
     <div id="display-urls" class="display-urls">
       <div id="url-list" class="url-list">No URLs found.</div>
@@ -24,6 +24,8 @@
     </div>
     <div id="process-urls" class="process-urls">
       <input type="button" id="open-url" class="btn" value="Open random url" disabled>
+      <input type="button" id="save-urls" class="btn" value="Save URLs">
+      <input type="button" class="btn" value="Save to database">
     </div>
   </main>
 </body>
