@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --accent: #666666;;
+  --destructive: #ff0000;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground)
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+a, i {
+  color: var(--foreground);
+}
+
+.btn {
+  background-color: var(--foreground);
+  padding: .6rem 1.1rem;
+  margin: .5rem;
+  border: none;
+  border-radius: 7.5px;
+  outline: none;
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #d8d8d8;
+  cursor: pointer;
+}
+
+.editable-div {
+  width: 90%;
+  height: 150px;
+  margin-top: 1rem;
+  padding: .5rem;
+  background-color: #313131;
+  overflow-y: scroll;
+  user-select: all;
+}
+
+.url-actions {
+  text-align: center;
+}
+
+.display-urls {
+  width: 90%;
+  min-height: 300px;
+  max-height: 500px;
+  
+}
+
+.url-list {
+  height: 300px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  margin-bottom: .5rem;
+}
+
+.list-item {
+  padding-left: .75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-item:hover {
+  background-color: var(--accent);
+}
+
+.list-item * {
+  vertical-align: middle;
+}
+
+.list-item a {
+  display: block;
+  max-width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list-item i {
+  padding: .75rem;
+  font-size: 1.5rem;
+}
+
+.list-item i:hover {
+  color: var(--destructive);
+  cursor: pointer;
+}

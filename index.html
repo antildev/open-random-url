@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Random URL</title>
+  <link rel="stylesheet" href="styles/globals.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/functions.js"></script>
+</head>
+<body>
+  <main>
+    <div id="editable-div" class="editable-div" contenteditable="true">Paste here your URLs.</div>
+    <div id="url-actions" class="url-actions">
+      <input type="button" id="add-urls" class="btn" value="Add URLs">
+      <input type="button" id="clear-urls" class="btn" value="Clear URLs">
+      <input type="button" class="btn" value="Save URLs">
+      <input type="button" class="btn" value="Save to database">
+    </div>
+    <div id="display-urls" class="display-urls">
+      <div id="url-list" class="url-list">No URLs found.</div>
+      <span id="url-count" class="url-count">Total URLs: 0</span>
+    </div>
+    <div id="process-urls" class="process-urls">
+      <input type="button" id="open-url" class="btn" value="Open random url" disabled>
+    </div>
+  </main>
+</body>
+</html>
